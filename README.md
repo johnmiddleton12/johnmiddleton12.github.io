@@ -1,5 +1,14 @@
-# test_pong_site
+### Main Code Hub Website
 
-Test to have pong run on javascript
- 
-* Using pong.js
+Provides links to social media
+* Github, socials
+
+> NOTE: Has pong in slideshow
+
+### Other Goals
+
+Blank
+
+* Blank
+
+> NOTE: Blank
