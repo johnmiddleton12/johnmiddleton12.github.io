@@ -1,3 +1,3 @@
-# www.jpmiddleton.com
+# JPMiddleton.com
 
 ### Main Website
