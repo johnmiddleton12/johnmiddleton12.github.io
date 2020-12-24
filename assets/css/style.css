@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+
+}
+
+.hidden {
+  opacity:0;
+}
+
+.console-container {
+ 
+  font-size:2em;
+  color:black;
+
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  left:10px;
+}
+
+/* Testing Dark Mode */
+a {
+  color: currentColor;
+}
+
+.navbar {
+  color: white;
+}

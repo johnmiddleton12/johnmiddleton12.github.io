@@ -4,55 +4,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Projects</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styleNoBoot.css">
 </head>
 
-<body>
+<body class="light">
 
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">Johnathan Middleton</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar">
+        
+        <div class="container">
+
+            <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="test">Toggle Dark Mode</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">Projects</a>
+        <a href="#contact">Travel</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
     <main class="page landing-page">
-        <section class="clean-block features">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/cnu/cnu.png&quot;);color:rgba(9, 162, 255, 0.6);">
+            <div class="text" style="color:white">
+                <h2><b>Student, Developer, Engineer.</b></h2>
+                <p>Student at Christopher Newport University pursuing a career in Cybersecurity.</p><a class="btn btn-outline-light btn-lg" href="#scroll-target">Learn More</a>
+            </div>
+        </section>
+        <section class="clean-block clean-info dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Projects</h2>
-                    <p>I've spent most of my free time the last few years working on things that interest me. Here are some of them.</p>
+                    <h2 class="text-info">Info</h2><a id="scroll-target" class="anchor" href="#"></a>
+                    <p>While I'm a student first, I try to find time to pursue my other hobbies, such as playing guitar.</p>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-5 feature-box"><i class="fa fa-spotify icon"></i> 
-                        <h4>Spotify Follower Tracker</h4>
-                        <p>Standalone Web App that tracks and monitors the amount of followers your Spotify account has. Emails upon change of this number.</p>
-                    </div>
-                    <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
-                        <h4>Grade Book Tracker</h4>
-                        <p>What started as an interesting class project soon turned into a full fledged grade-calculating system, able to quantify data in many ways through nested dictionaries.</p>
-                    </div>
-                    <div class="col-md-5 feature-box"><i class="fa fa-connectdevelop icon"></i>
-                        <h4>Golden Spiral in Minecraft</h4>
-                        <p>I coded a plugin for Minecraft that creates a logarithmic spiral with roughly the growth factor of the golden ratio at the point of clicking.</p>
-                    </div>
-                    <div class="col-md-5 feature-box"><i class="fa fa-gamepad icon"></i>
-                        <h4>2D Platformer</h4>
-                        <p>Currently working on a 2D platformer designed with tilemapping, spritesheets, and matter-based physics.</p>
+                <div class="row align-items-center">
+                    <div class="col-md-6"><img class="img-thumbnail" src="assets/img/me/portraitphoto.jpg"></div>
+                    <div class="col-md-6">
+                        <h3>Musician</h3>
+                        <div class="getting-started-info">
+                            <p>I've been playing guitar for over 3 years now, and some of my favorite bands are Pink Floyd, Led Zeppelin, and the Rolling Stones.</p>
+                        </div><a class="btn btn-outline-primary btn-lg" href="#scroll-target2">Learn Even More</a>
                     </div>
                 </div>
             </div>
@@ -61,13 +73,13 @@
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info">Images</h2>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p> -->
+                    <p>Below are images of Big Sur, California, Okinawa, Japan, and Hawaii, respectively. I've lived in all of these regions.</p>
                 </div>
                 <div class="carousel slide" data-ride="carousel" id="carousel-1">
                     <div class="carousel-inner">
-                        <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/mc/goldenspiral.png" alt="Slide Image"></div>
-                        <div class="carousel-item"><img class="w-100 d-block" src="assets/img/python/gradebook.png" alt="Slide Image"></div>
-                        <div class="carousel-item"><img class="w-100 d-block" src="assets/img/game/2dplat.png" alt="Slide Image"></div>
+                        <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/scenery/big_sur.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/okinawa.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/hawaii.jpg" alt="Slide Image"></div>
                     </div>
                     <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
                     <ol class="carousel-indicators">
@@ -79,6 +91,7 @@
             </div>
         </section>
     </main>
+
     <footer class="page-footer dark" style="padding-top: 0px;">
         <div id="scroll-target2" class="footer-copyright" style="margin-top: 0px;">
             
@@ -97,9 +110,7 @@
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-
     <script src="assets/js/main.js"></script>
     
 
