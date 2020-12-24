@@ -13,7 +13,7 @@ if ($('.clean-product').length > 0) {
 // Animated Console Text
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Johnathan Middleton', 'John Paul', 'Greetings.'], 'text',['darkblue','teal','lightblue']);
+consoleText(['John Middleton', 'John Paul', 'Greetings.'], 'text',['darkblue','teal','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
