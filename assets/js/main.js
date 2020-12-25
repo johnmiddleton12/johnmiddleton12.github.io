@@ -1,3 +1,9 @@
+function myFunction() {
+  var element = document.getElementById("toggleBtn");
+  element.classList.toggle("fa-sun");
+  element.classList.toggle("fa-moon");
+}
+
 // Animated Console Text
 
 // function([string1, string2],target id,[color1,color2])    

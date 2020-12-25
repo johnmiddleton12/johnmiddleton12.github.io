@@ -32,3 +32,28 @@ html, body {
   color: white !important;
 }
 
+/* Dark Mode Button */
+#toggleBtn{
+
+  text-decoration: none;
+  color: #668ad8;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  border: double 2px #668ad8;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  z-index: 100;
+}
+
+#darkMode:checked ~ #toggleBtn {
+  transform: rotateY(180deg);
+}

@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
 <body>
+
+    
 
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container">
@@ -28,11 +29,14 @@
                     <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" id="test">Toggle Dark Mode</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Dark Mode Toggler Button -->
+    <input type="checkbox" id="darkMode">
+    <label for="darkMode" class="fa fa-sun fa-2x" id="toggleBtn" onclick="setTimeout(myFunction, 150)"></label>
 
     <main class="page landing-page">
         <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/cnu/cnu.png&quot;);color:rgba(9, 162, 255, 0.6);" id="test">
@@ -104,7 +108,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
 
     <script>
-    $("#test").click(function(){
+    $("#toggleBtn").click(function(){
         $("nav").toggleClass("bg-white").toggleClass("bg-dark").toggleClass("dark-mode");
         $("section[id!='test']").toggleClass("dark-mode");
         $("main").toggleClass("dark-mode");
@@ -112,7 +116,7 @@
     </script>
 
     <script src="assets/js/main.js"></script>
-    
+    <script src="https://kit.fontawesome.com/01c1201708.js" crossorigin="anonymous"></script>
 
 </body>
 
