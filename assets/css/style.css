@@ -22,10 +22,13 @@ html, body {
 }
 
 /* Testing Dark Mode */
-a {
-  color: currentColor;
+
+.dark-mode {
+  background-color: #191919 !important;
+  color: white !important;
 }
 
-.navbar {
-  color: white;
+.dark-mode a {
+  color: white !important;
 }
+

@@ -1,10 +1,3 @@
-// let mainNav = document.getElementById('js-menu');
-// let navBarToggle = document.getElementById('js-navbar-toggle');
-
-// navBarToggle.addEventListener('click', function () {
-//   mainNav.classList.toggle('active');
-// });
-
 // Animated Console Text
 
 // function([string1, string2],target id,[color1,color2])    
