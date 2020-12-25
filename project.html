@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -30,7 +30,10 @@
         </div>
     </nav>
     
-
+    <!-- Dark Mode Toggler Button -->
+    <input type="checkbox" id="darkMode">
+    <label for="darkMode" class="fa fa-sun fa-2x" id="toggleBtn" onclick="setTimeout(myFunction, 150)"></label>
+    
     <main class="page landing-page">
         <section class="clean-block features">
             <div class="container">
@@ -100,8 +103,14 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-
     <script src="assets/js/main.js"></script>
+
+    <script>
+    $("#toggleBtn").click(toggleDarkMode);
+    </script>
+
+    
+    <script src="https://kit.fontawesome.com/01c1201708.js" crossorigin="anonymous"></script>
     
 
 </body>

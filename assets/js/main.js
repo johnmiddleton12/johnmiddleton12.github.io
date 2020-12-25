@@ -1,7 +1,34 @@
-function myFunction() {
-  var element = document.getElementById("toggleBtn");
+if (localStorage.getItem('darkMode') === null) {
+  localStorage.setItem('darkMode', 'false');
+  var darkModeOn = false;
+} else {
+  var darkModeOn = localStorage.getItem('darkMode');
+}
+
+var element = document.getElementById("toggleBtn");
+
+if (darkModeOn === 'true') {
+  toggleDarkMode()
   element.classList.toggle("fa-sun");
   element.classList.toggle("fa-moon");
+}
+
+
+function toggleDarkMode () {
+    $("nav").toggleClass("bg-white").toggleClass("bg-dark").toggleClass("dark-mode");
+    $("section[id!='weird']").toggleClass("dark-mode");
+    $("main").toggleClass("dark-mode");
+}
+
+function myFunction() {
+  
+  element.classList.toggle("fa-sun");
+  element.classList.toggle("fa-moon");
+  if (localStorage.getItem('darkMode') === 'true') {
+    localStorage.setItem('darkMode', 'false');
+  } else {
+    localStorage.setItem('darkMode', 'true');
+  }
 }
 
 // Animated Console Text
