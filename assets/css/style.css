@@ -16,9 +16,10 @@ html, body {
 
 }
 .console-underscore {
-   display:inline-block;
+  display:inline-block;
   position:relative;
-  left:10px;
+  /* left:10px; Not sure what this does, but removed bc it wasnt in line*/
+  left:0px;
 }
 
 /* Testing Dark Mode */
