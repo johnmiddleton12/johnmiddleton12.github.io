@@ -45,6 +45,8 @@ if (fileName === 'index.html') {
   var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.', 'I am currently busy.', 'If you are reading this...', "You're special."];
 } else if (fileName === 'about.html') {
   var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.'];
+} else {
+  var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.'];
 }
 
 consoleText(consoleWords, 'text',['darkblue','teal','green']);
