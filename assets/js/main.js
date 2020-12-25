@@ -17,7 +17,7 @@ if (darkModeOn === 'true') {
 function toggleDarkMode () {
     $("nav").toggleClass("bg-white").toggleClass("bg-dark").toggleClass("dark-mode");
     $("section[id!='weird']").toggleClass("dark-mode");
-    $("main").toggleClass("dark-mode");
+    // $("main").toggleClass("dark-mode");
     $(".console-container").css("color", "#ffffff");
 }
 
@@ -35,7 +35,19 @@ function myFunction() {
 // Animated Console Text
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['John Middleton', 'John Paul', 'Greetings.'], 'text',['darkblue','teal','lightblue']);
+var fileName = location.pathname.split("/").slice(-1)[0];
+
+if (fileName === 'index.html') {
+  var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.'];
+} else if (fileName === 'project.html') {
+  var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.'];
+} else if (fileName === 'travel.html') {
+  var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.', 'I am currently busy.', 'If you are reading this...', "You're special."];
+} else if (fileName === 'about.html') {
+  var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.'];
+}
+
+consoleText(consoleWords, 'text',['darkblue','teal','green']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

@@ -5,18 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>About Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 
 <body>
 
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">Johnathan Middleton</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
+        <div class="container">
+
+            <div class='console-container logo'><span id='text'></span>
+                <div class='console-underscore' id='console'>&#95;</div>
+            </div>
+
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -27,26 +35,28 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Dark Mode Toggler Button -->
     <input type="checkbox" id="darkMode">
     <label for="darkMode" class="fa fa-sun fa-2x" id="toggleBtn" onclick="setTimeout(myFunction, 150)"></label>
 
-    <main class="page landing-page" >
+    <main class="page landing-page">
 
 
-        <section class="clean-block clean-info dark" >
+        <section class="clean-block clean-info dark">
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info">About Me</h2>
-                    <p>I'm a 19 year old computer science student at Christopher Newport University. Some of my hobbies include gaming, soccer, and coding projects.</p>
+                    <p>I'm a 19 year old computer science student at Christopher Newport University. Some of my hobbies
+                        include gaming, soccer, and coding projects.</p>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-6"><img class="img-thumbnail" src="assets/img/me/portraitphoto.jpg"></div>
                     <div class="col-md-6">
                         <h3>Background</h3>
                         <div class="getting-started-info">
-                            <p>I'm from a military family, so I've lived all over the world, including in Okinawa, Japan, where I lived for several years.</p>
+                            <p>I'm from a military family, so I've lived all over the world, including in Okinawa,
+                                Japan, where I lived for several years.</p>
                         </div><a class="btn btn-outline-primary btn-lg" href="travel.html">Traveling</a>
                     </div>
                 </div>
@@ -56,7 +66,7 @@
     </main>
     <footer class="page-footer dark" style="padding-top: 0px;">
         <div id="scroll-target2" class="footer-copyright" style="margin-top: 0px;">
-            
+
             <p>© 2020 Middleton </p>
             <a style="text-decoration:none" href="https://www.github.com/johnmiddleton12" target="_blank"
                 class="fa fa-github w3-xlarge fa-fw w3-hover-opacity"></a>
@@ -68,7 +78,7 @@
                 class="fa fa-twitter w3-xlarge fa-fw w3-hover-opacity"></a>
             <a style="text-decoration:none" href="https://www.linkedin.com/in/johnathan-middleton-24626b1bb/"
                 target="_blank" class="fa fa-linkedin w3-xlarge fa-fw w3-hover-opacity"></a>
-            
+
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
@@ -76,12 +86,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-    $("#toggleBtn").click(toggleDarkMode);
+        $("#toggleBtn").click(toggleDarkMode);
     </script>
 
-    
+
     <script src="https://kit.fontawesome.com/01c1201708.js" crossorigin="anonymous"></script>
-    
+
 
 </body>
 
