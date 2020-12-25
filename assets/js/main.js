@@ -35,7 +35,11 @@ function myFunction() {
 // Animated Console Text
 
 // function([string1, string2],target id,[color1,color2])    
-var fileName = location.pathname.split("/").slice(-1)[0];
+try {
+  var fileName = location.pathname.split("/").slice(-1)[0];
+} catch (err) {
+  var fileName = '';
+}
 
 if (fileName === 'index.html') {
   var consoleWords = ['Johnathan Middleton', 'John Paul', 'Greetings.'];
