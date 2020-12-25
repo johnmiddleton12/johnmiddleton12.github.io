@@ -18,7 +18,7 @@ function toggleDarkMode () {
     $("nav").toggleClass("bg-white").toggleClass("bg-dark").toggleClass("dark-mode");
     $("section[id!='weird']").toggleClass("dark-mode");
     // $("main").toggleClass("dark-mode");
-    $(".console-container").css("color", "#ffffff");
+    $(".console-container").toggleClass("console-container-dark");
 }
 
 function myFunction() {

@@ -10,11 +10,13 @@ html, body {
 }
 
 .console-container {
- 
   font-size:2em;
   color:black;
-
 }
+.console-container-dark {
+  color: white;
+}
+
 .console-underscore {
   display:inline-block;
   position:relative;
